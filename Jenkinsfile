@@ -40,7 +40,7 @@ pipeline {
                      // 停止并删除旧容器
                     sh "docker stop su7-container || true && docker rm su7-container || true"
                     // 运行新容器
-                    sh "docker run -d -p 8083:80 --name su7-container ${DOCKER_IMAGE}"
+                    sh "docker run -d -p 8087:80 --name su7-container ${DOCKER_IMAGE}"
                 }
             }
         }
